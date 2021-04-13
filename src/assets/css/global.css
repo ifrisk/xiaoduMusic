@@ -1,0 +1,83 @@
+@import url("normalize.css");
+body {
+	font-family:"微软雅黑";
+}
+:root{
+	/* 白色 */
+	--white: #ffffff;
+	/* 黑色 */
+	--black: #000000;
+	/* 蓝色 */
+	--blue: #409EFF;
+	/* 主颜色 */
+	--main-color: #EDEDED;
+	/* 副颜色 */
+	--sub-color: #F9F9F9;
+	/* 主要字体颜色 */
+	--main-font-color: #303133;
+	/* 常规字体颜色 */
+	--routine-font-color: #606266;
+	/* 次要字体颜色 */
+	--secondary-font-color: #909399;
+	/* 一级边框 */
+	--one-boder: #DCDFE6;
+	/* 二级边框 */
+	--two-boder: #E4E7ED;
+	/* 三级边框 */
+	--three-boder: #EBEEF5;
+	/* hover背景色 */
+	--hover-bgcolor: #eeeeee;
+	/* 浅蓝hover背景色 */
+	--blue-hover-bgcolor: rgb(217, 236, 255);
+	/* 深蓝hover背景色 */
+	--deep-blue-hover-bgcolor: #368aff;
+	/* 默认字体大小 */
+	--font-size: 14px;
+	/* 小字体大小 */
+	--small-font-size: 13px;
+	/* 中等字体大小 */
+	--second-font-size: 15px;
+	/* 大字体大小 */
+	--big-font-size: 25px;
+}
+
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	background-color: #F5F5F5;
+}
+ 
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0);
+}
+ 
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0);
+	background-color: #bfbfbf;
+}
+::-webkit-scrollbar-thumb:hover {
+	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.5);
+}
+
+.wrap {
+	width: 1050px;
+	margin: 0 auto;
+}
+
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden
+}
+.clearfix{
+	*+height:1%;
+}
